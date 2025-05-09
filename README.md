@@ -1,51 +1,87 @@
-# AI Trip Advisor
+Thanks! Let's update the `README.md` to reflect the actual structure of your project, including the folders like `my-trips`, `create_trip`, and `view_trip`.
 
-This repository contains the code for an AI-driven Trip Advisor, which generates customized trips with hotel recommendations and itineraries based on user budgets and travel preferences. Due to the use of Google Maps Places (NEW), Photos, and Geolocation APIs, this project has a restriction of staying under an expenditure of $200 monthly, hence no deployed link is provided.
+Here's the revised version:
 
-## Features
+---
 
-- **Personalized Trips**: Generate trips tailored to your budget and travel choices.
-- **Hotel Recommendations**: Get hotel suggestions that fit your itinerary.
-- **Dynamic Itineraries**: Itineraries are created based on user preferences and budgets.
+```markdown
+# AI Trip Planner
 
-## Screenshots
+AI Trip Planner is a travel planning assistant that uses multi-AI agents to generate personalized trip plans based on user preferences. It recommends hotels and tourist attractions, displays them on an interactive map, and creates a detailed itinerary. The app uses Firebase to store user data and trip details securely.
 
-![Screenshot 1](https://github.com/user-attachments/assets/1300f4a4-1a9e-409c-ba8a-46bca25721c0)
-![Screenshot 2](https://github.com/user-attachments/assets/136b31f3-f3c9-4b31-a2de-3737d5109561)
-![Screenshot 3](https://github.com/user-attachments/assets/8be09761-a8d1-4a0f-a365-425ddb4e688e)
-![Screenshot 4](https://github.com/user-attachments/assets/b7dd2f12-291d-4645-9533-7cc5298ef6fe)
-![Screenshot 5](https://github.com/user-attachments/assets/bd0cfefd-8aad-4b66-a516-58a899f86d3a)
-![Screenshot 6](https://github.com/user-attachments/assets/c859c344-80fb-4222-8b06-f9225275189b)
+## 🌟 Features
 
-## Getting Started
+- 🏨 Recommends hotels based on selected destination
+- 📍 Suggests must-visit tourist spots
+- 🗺️ Shows an interactive map with pins for each place
+- 🧠 Uses Gemini AI to assist in generating custom travel plans
+- 🔐 Firebase authentication and Firestore integration for storing trips
 
-To run this project on your machine, follow these steps:
+## 🛠️ Tech Stack
 
-1. **Clone the repository**:
-    ```bash
-    git clone https://github.com/your-username/ai-trip-advisor.git
-    cd ai-trip-advisor
-    ```
+- **Frontend**: React (Vite)
+- **State Management**: React Context / Hooks
+- **Authentication & DB**: Firebase Auth + Firestore
+- **APIs**:
+  - Google Places API
+  - Gemini AI API
+  - Google Maps JavaScript API
 
-2. **Create a `.env.local` file in the root folder**:
-    ```plaintext
-    VITE_GOOGLE_PLACE_API_KEY=your_google_place_api_key
-    VITE_GOOGLE_GEMINI_AI_API_KEY=your_google_gemini_ai_api_key
-    VITE_GOOGLE_AUTH_CLIENT_ID=your_google_auth_client_id
-    FIREBASE_API_KEY=your_firebase_api_key
-    ```
+## 📂 Project Structure
 
-3. **Install dependencies**:
-    ```bash
-    npm install
-    ```
+```
 
-4. **Run the application**:
-    ```bash
-    npm run dev
-    ```
+src/
+├── assets/                 # Images, icons, etc.
+├── components/             # Reusable UI components
+│   ├── custom/
+│   └── ui/
+├── constants/              # Configs, constants, etc.
+├── create-trip/            # Trip creation flow
+├── my-trips/               # Displays user’s saved trips
+├── view-trip/              # Shows trip details and map
+├── App.jsx
+├── main.jsx
 
-## Contributing
 
-Contributions are welcome! Please fork the repository and create a pull request with your changes.
+## 🚀 Getting Started
+
+1. Clone the repo:
+
+   ```bash
+   git clone https://github.com/your-username/ai-trip-planner.git
+   cd ai-trip-planner
+   ```
+
+2. Install dependencies:
+
+   ```bash
+   npm install
+   ```
+
+3. Create a `.env` file in the root directory and add:
+
+```env
+VITE_GOOGLE_PLACE_API_KEY=your_google_places_api_key
+VITE_GOOGLE_GEMINI_AI_API_KEY=your_gemini_api_key
+VITE_GOOGLE_AUTH_CLIENT_ID=your_google_auth_client_id
+FIREBASE_API_KEY=your_firebase_api_key
+````
+
+
+4. Run the app:
+
+   ```bash
+   npm run dev
+   ```
+
+## 📸 Screenshots
+
+![Screenshot 2025-04-21 215426](https://github.com/user-attachments/assets/2e6cf2dc-5557-404e-88c8-cc75493dc49c)
+
+![Screenshot 2025-04-21 215337](https://github.com/user-attachments/assets/c3ae5740-efe5-441a-af81-3f90843aa0f8)
+
+![Screenshot 2025-04-21 214915](https://github.com/user-attachments/assets/12098396-fbf7-4834-9161-b5eed2440588)
+
+![Screenshot 2025-04-21 214853](https://github.com/user-attachments/assets/26ad0428-cb7d-4073-ba52-ea0e83f42dfe)
 
